@@ -7,7 +7,7 @@
 
 <script>
 import Catalog from "./Catalog/Catalog.vue";
-import Board from "./Board.vue";
+import Board from "./Board/Board.vue";
 
 export default {
   name: "Main",
