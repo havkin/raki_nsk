@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Catalog from "./Catalog.vue";
+import Catalog from "./Catalog/Catalog.vue";
 import Board from "./Board.vue";
 
 export default {
