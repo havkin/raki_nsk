@@ -1,9 +1,11 @@
 <template>
   <div class="cardContainer">
-    <div class="cardImage">{{data.image}}</div>
-    <div class="cardTitle">{{data.title}}</div>
-    <div class="cardPrice">{{data.price}}</div>
-    <div class="cardPrice">{{data.catId}}</div>
+    <div class="cardImageWrapper">
+      <img :src="data?.image" alt="card image" class="cardImage">
+    </div>
+    <div class="cardTitle">{{data?.title}}</div>
+    <div class="cardPrice">{{data?.price}} руб/кг</div>
+    <div>{{data?.catId}}</div>
   </div>
 </template>
 
@@ -13,6 +15,11 @@ export default {
   props: {
     data: Object,
   },
+  computed: {
+    imagePath() {
+      return "food.jpg"
+    }
+  }
 }
 </script>
 
@@ -21,7 +28,23 @@ export default {
     display: flex;
     flex-direction: column;
     min-width: 300px;
+    max-width: 500px;
     border: 1px solid black;
     border-radius: 5px;
+    margin-bottom: 24px;
+    background-color: #fff;
+  }
+  .cardImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .cardTitle {
+    padding: 10px;
+    font-size: 2rem;
+  }
+  .cardPrice {
+    padding: 10px;
+    font-size: 1.5rem;
   }
 </style>

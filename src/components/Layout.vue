@@ -26,8 +26,9 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 1280px;
+    /* max-width: 1280px; */
     margin: 0 auto;
+    padding: 0 60px;
     height: 100vh;
   }
 </style>
