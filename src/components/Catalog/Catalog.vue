@@ -12,7 +12,8 @@
 </template>
 
 <script>
-import {data} from '../../assets/stub_data/catalog';
+import {data} from '@/assets/stub_data/catalog';
+
 export default {
   name: "Catalog",
   data() {
@@ -20,9 +21,9 @@ export default {
   },
   methods: {
     handler(item) {
-      console.log(item);
-    }
-  }
+      this.$router.push({query: {catId: item}});
+    },
+  },
 };
 </script>
 
