@@ -19,9 +19,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/global.scss";
+
   .mainContent {
     display: flex;
     flex-grow: 2;
     background-color: #eee;
+    overflow-y: scroll;
+    flex-direction: column;
+    padding: 10px;
+
+    @media (min-width: $MOBILE) {
+      flex-direction: row;
+    }
   }
 </style>

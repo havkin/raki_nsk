@@ -1,5 +1,8 @@
 <template>
-  <div>Header</div>
+  <div class="headerContainer">
+    <div>Раки-раки</div>
+    <div>тел. +7 (999) 000-00-00</div>
+  </div>
 </template>
 
 <script>
@@ -8,6 +11,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(201, 226, 238);
+  padding: 20px;
+}
 </style>

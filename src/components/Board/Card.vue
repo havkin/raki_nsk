@@ -5,7 +5,7 @@
     </div>
     <div class="cardTitle">{{data?.title}}</div>
     <div class="cardPrice">{{data?.price}} руб/кг</div>
-    <div>{{data?.catId}}</div>
+    <!-- <div>{{data?.catId}}</div> -->
   </div>
 </template>
 
