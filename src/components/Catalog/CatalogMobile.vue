@@ -4,7 +4,7 @@
     <div v-if="isOpen" class="catalog">
       <div class="catalogItem" @click="handler('')">all</div>
       <div v-for="item in data" :key="item" class="catalogItem" @click="handler(item)">
-        {{ item }}
+        {{ item.title }}
       </div>
     </div>
   </div>
@@ -24,7 +24,7 @@ export default {
   methods: {
     handler(item) {
       this.isOpen = false;
-      this.$router.push({ query: { catId: item } });
+      this.$router.push({ query: { catId: item.catId } });
     },
     visibleHandler() {
       this.isOpen = !this.isOpen;

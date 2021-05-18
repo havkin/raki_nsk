@@ -7,7 +7,7 @@
       class="catalogItem"
       @click="handler(item)"
     >
-      {{item}}
+      {{item.title}}
     </div>
   </div>
 </template>
@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     handler(item) {
-      this.$router.push({query: {catId: item}});
+      this.$router.push({query: {catId: item.catId}});
     },
   },
 };
